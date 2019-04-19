@@ -1,0 +1,23 @@
+{
+  "name": "chingon",
+  "version": "1.0.0",
+  "description": "Component library made with love and React.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Grekz/chingon-js.git"
+  },
+  "keywords": [
+    "react",
+    "components"
+  ],
+  "author": "grekz adancarrasco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Grekz/chingon-js/issues"
+  },
+  "homepage": "https://github.com/Grekz/chingon-js#readme"
+}
