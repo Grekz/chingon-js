@@ -1,12 +1,24 @@
 {
   "defaultSeverity": "error",
-  "extends": ["tslint:recommended", "tslint-config-prettier"],
+  "extends": [
+    "tslint:latest",
+    "tslint-react",
+    "tslint-eslint-rules",
+    "tslint-config-prettier",
+    "tslint-plugin-prettier"
+  ],
   "jsRules": {},
-  "rules": {
-    "semicolon": [true, "never"]
-  },
   "rulesDirectory": [],
+  "rules": {
+    "prettier": [
+      true
+    ]
+  },
   "linterOptions": {
-    "exclude": ["node_modules/**/*.ts", "dist/**/*.ts"]
+    "exclude": [
+      "node_modules/**/*.*",
+      "dist/**/*.*",
+      "src/**/*.test.tsx"
+    ]
   }
 }
