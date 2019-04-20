@@ -2,6 +2,7 @@
   "compilerOptions": {
     "module": "commonjs",
     "moduleResolution": "node",
+    "allowJs": true,
     "target": "es6",
     "lib": ["dom", "esnext"],
     "pretty": true,
@@ -10,8 +11,14 @@
     "baseUrl": "./src",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "alwaysStrict": true
+    "alwaysStrict": true,
+    "jsx": "react"
   },
-  "include": ["src/**/*.ts", "__tests__/**/*.ts"],
+  "include": [
+    "src/**/*.ts",
+    "__tests__/**/*.ts",
+    "src/atoms/Button/button.test.tsx",
+    "src/atoms/Button/button.component.tsx"
+  ],
   "exclude": ["node_modules"]
 }
