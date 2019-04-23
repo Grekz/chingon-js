@@ -4,21 +4,32 @@
     "moduleResolution": "node",
     "allowJs": true,
     "target": "es6",
-    "lib": ["dom", "esnext"],
+    "lib": [
+      "es5",
+      "es6",
+      "es7",
+      "es2017",
+      "dom",
+      "esnext"
+    ],
     "pretty": true,
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": "./src",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
     "alwaysStrict": true,
-    "jsx": "react"
+    "jsx": "react",
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
   },
   "include": [
-    "src/**/*.ts",
-    "__tests__/**/*.ts",
-    "src/atoms/Button/button.test.tsx",
-    "src/atoms/Button/button.component.tsx"
+    "src/**/*"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }

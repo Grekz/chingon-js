@@ -8,9 +8,11 @@ type ButtonType = React.SFC<IButton>
 
 const WrapperButton: ButtonType = styled.button`
   color: ${(props: IButton) => props.color};
-  background: black;
+  background: aqua;
 `
 
-const Button: ButtonType = props => <WrapperButton>{props}</WrapperButton>
+const Button: ButtonType = props => (
+  <WrapperButton>{props.children}</WrapperButton>
+)
 
 export default Button
