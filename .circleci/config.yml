@@ -11,26 +11,30 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          key: v1-dependencies-{{ checksum "package.json" }}
+          keys: 
+            - v1-dependencies-{{ checksum "npm-shrinkwrap.json" }}
+            - v1-dependencies-
       - run: 
           name: Install dependencies
           command: npm install
-      - save_cache:
-          paths:
-            - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
       - run:
           name: test
           command: npm test
       - run:
           name: build
           command: npm run build
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "npm-shrinkwrap.json" }}
       - persist_to_workspace:
           root: ~/chingon
           paths: .
   publish:
     <<: *defaults
     steps:
+      - attach_workspace:
+          at: ~/chingon
       - run:
           name: Authenticate with registry
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/chingon/.npmrc
