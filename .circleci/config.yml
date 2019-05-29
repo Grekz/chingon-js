@@ -1,12 +1,9 @@
 version: 2.1
 
-
 defaults: &defaults
   working_directory: ~/chingon
   docker:
     - image: circleci/node:10.15
-  branches:
-      only: master
 
 jobs:
   build:
