@@ -1,11 +1,16 @@
-version: 2
+version: 2.1
+
+
+defaults: &defaults
+  working_directory: ~/chingon
+  docker:
+    - image: circleci/node:10.15
+  branches:
+      only: master
+
 jobs:
   build:
-    working_directory: ~/chingon
-    branches:
-        only: master
-    docker:
-      - image: circleci/node:10.15
+    <<: *defaults
     steps:
       - checkout
       - restore_cache:
@@ -25,10 +30,25 @@ jobs:
           command: npm test
       - run:
           name: build
-          command: npm run build    
+          command: npm run build
+  publish:
+    <<: *defaults
+    steps:
       - run:
           name: Authenticate with registry
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/chingon/.npmrc
       - run:
           name: Publish package
           command: npm publish
+workflows:
+  build-n-deploy:
+    jobs:
+      - build
+      - publish:
+          requires:
+            - build
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              ignore: /.*/
