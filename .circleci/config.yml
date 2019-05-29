@@ -19,15 +19,15 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-      - persist_to_workspace:
-          root: ~/chingon
-          paths: .
       - run:
           name: test
           command: npm test
       - run:
           name: build
           command: npm run build
+      - persist_to_workspace:
+          root: ~/chingon
+          paths: .
   publish:
     <<: *defaults
     steps:
