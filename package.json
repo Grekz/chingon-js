@@ -1,6 +1,6 @@
 {
   "name": "chingon",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "description": "Component library made with love and React.js",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
