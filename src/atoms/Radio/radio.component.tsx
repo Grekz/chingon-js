@@ -3,25 +3,26 @@ import * as React from 'react'
 
 interface IInputProps {
   id: string
-  isChecked?: boolean
+  checked?: boolean
   type?: string
+  onChange?: (event: React.FormEvent<HTMLInputElement>) => void
 }
 
 type InputType = React.SFC<IInputProps>
 
 interface ILabelProps {
   children: React.ReactNode
-  for?: string
+  htmlFor?: string
 }
 
 interface IRadioProps extends IInputProps, ILabelProps {}
 
 type LabelType = React.SFC<ILabelProps>
 
-const Radio = ({ isChecked = false, children, id }: IRadioProps) => (
+const Radio = ({ checked = false, children, id, onChange }: IRadioProps) => (
   <RadioWrapper>
-    <RadioInput id={id} type="radio" isChecked={isChecked} />
-    <RadioLabel for={id}>{children}</RadioLabel>
+    <RadioInput id={id} type="radio" checked={checked} onChange={onChange} />
+    <RadioLabel htmlFor={id}>{children}</RadioLabel>
   </RadioWrapper>
 )
 

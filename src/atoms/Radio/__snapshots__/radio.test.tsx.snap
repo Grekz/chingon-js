@@ -3,12 +3,12 @@
 exports[`<Radio /> rendering should match snapshot 1`] = `
 <Styled(div)>
   <Styled(input)
+    checked={false}
     id="myRadio"
-    isChecked={false}
     type="radio"
   />
   <Styled(label)
-    for="myRadio"
+    htmlFor="myRadio"
   >
     Radio button
   </Styled(label)>
