@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ButtonGroup /> rendering should match snapshot 1`] = `
+<Styled(div)
+  role="group"
+>
+  <Button
+    buttonType="primary"
+  >
+    Left
+  </Button>
+  <Button
+    buttonType="primary"
+  >
+    Center
+  </Button>
+  <Button
+    buttonType="primary"
+  >
+    Right
+  </Button>
+</Styled(div)>
+`;

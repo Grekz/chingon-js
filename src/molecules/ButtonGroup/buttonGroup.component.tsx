@@ -4,7 +4,7 @@ import * as React from 'react'
 import ButtonType from '../../atoms/Button/button.component'
 
 interface IButtonGroupProps {
-  children: Array<ButtonType> | ButtonType
+  children: ButtonType[] | ButtonType
   role: string
 }
 
