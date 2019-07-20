@@ -1,5 +1,5 @@
-import * as React from 'react'
 import styled from '@emotion/styled'
+import * as React from 'react'
 
 interface IListItemProps {
   activeBackgroundColor?: string
@@ -13,7 +13,7 @@ interface IListItemProps {
   isActive?: boolean
 }
 
-type IListItemType = React.SFC<IListItemProps>
+export type ListItemType = React.SFC<IListItemProps>
 
 const ListItem = (props: IListItemProps) => (
   <ListItemWrapper {...props}>{props.children}</ListItemWrapper>
@@ -30,7 +30,7 @@ ListItem.defaultProps = {
   isActive: false,
 }
 
-const ListItemWrapper: IListItemType = styled.div`
+const ListItemWrapper: ListItemType = styled.div`
   position: relative;
   display: block;
   padding: 0.75rem 1.25rem;
