@@ -5,6 +5,7 @@ interface IButtonProps {
   buttonType: ButtonTypes
   children?: React.ReactNode | string
   role?: string
+  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void
 }
 
 export type ButtonType = React.SFC<IButtonProps>
@@ -19,7 +20,11 @@ export enum ButtonTypes {
 }
 
 const Button: ButtonType = props => (
-  <ButtonWrapper role="button" buttonType={props.buttonType}>
+  <ButtonWrapper
+    role="button"
+    buttonType={props.buttonType}
+    onClick={props.onClick}
+  >
     {props.children}
   </ButtonWrapper>
 )
