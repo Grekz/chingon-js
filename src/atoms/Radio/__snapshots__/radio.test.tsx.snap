@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Radio /> rendering should match snapshot 1`] = `
+<Styled(div)>
+  <Styled(input)
+    id="myRadio"
+    isChecked={false}
+    type="radio"
+  />
+  <Styled(label)
+    for="myRadio"
+  >
+    Radio button
+  </Styled(label)>
+</Styled(div)>
+`;
