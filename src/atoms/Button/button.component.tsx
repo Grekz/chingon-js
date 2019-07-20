@@ -7,7 +7,7 @@ interface IButtonProps {
   role?: string
 }
 
-type ButtonType = React.SFC<IButtonProps>
+export type ButtonType = React.SFC<IButtonProps>
 
 export enum ButtonTypes {
   PRIMARY = 'primary',
