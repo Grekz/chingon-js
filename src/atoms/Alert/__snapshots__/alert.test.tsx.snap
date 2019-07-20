@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Alert /> rendering should render Alert 1`] = `
+<Styled(div)
+  alertType="primary"
+  role="alert"
+>
+  A simple alert component - Check it out
+</Styled(div)>
+`;
