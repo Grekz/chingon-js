@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DropDown /> rendering should match snapshot 1`] = `
+<Styled(div)>
+  <Button
+    buttonType="primary"
+    onClick={[Function]}
+  >
+    My drop down
+  </Button>
+</Styled(div)>
+`;
