@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Input /> rendering should match snapshot 1`] = `
+<Styled(div)>
+  <label>
+    Test label
+  </label>
+  <input
+    placeholder="Input text"
+    type="text"
+  />
+</Styled(div)>
+`;

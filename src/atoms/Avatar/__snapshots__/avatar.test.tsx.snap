@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Avatar /> rendering should match snapshot 1`] = `
+<Styled(div)
+  backgroundColor="none"
+  content="https://avatars1.githubusercontent.com/u/3975603"
+  hasImage={true}
+  size="150px"
+/>
+`;

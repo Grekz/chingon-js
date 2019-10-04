@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Badge /> rendering should match snapshot 1`] = `
+<Styled(div)
+  fontColor="#fff"
+  size="30px"
+  status="online"
+>
+  <span>
+    4
+  </span>
+</Styled(div)>
+`;
