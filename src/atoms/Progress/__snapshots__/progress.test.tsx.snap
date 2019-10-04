@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Progress /> rendering should match snapshot 1`] = `
+<Styled(div)
+  backColor="#e9ecef"
+  color="#007bff"
+  max={100}
+  progress={20}
+>
+  <div />
+</Styled(div)>
+`;

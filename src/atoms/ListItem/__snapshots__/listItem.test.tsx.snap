@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ListItem /> rendering should match ListItem snapshot 1`] = `
+<Styled(div)
+  activeBackgroundColor="#007bff"
+  activeBorderColor="#007bff"
+  activeColor="#fff"
+  backgroundColor="#fff"
+  borderColor="rgba(0, 0, 0, 0.125)"
+  color="#000"
+  hoverBackgroundColor="#f8f9fa"
+  isActive={false}
+>
+  List item
+</Styled(div)>
+`;

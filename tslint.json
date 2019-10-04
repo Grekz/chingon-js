@@ -12,6 +12,10 @@
   "rules": {
     "prettier": [
       true
+    ],
+    "no-implicit-dependencies": [
+      true,
+      "dev"
     ]
   },
   "linterOptions": {

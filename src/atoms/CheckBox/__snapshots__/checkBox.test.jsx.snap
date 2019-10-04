@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CheckBox /> rendering should match snapshot 1`] = `
+<Styled(div)>
+  <Styled(input)
+    checked={true}
+    id="myCheckBox"
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <Styled(label)
+    htmlFor="myCheckBox"
+  >
+    Checkbox button
+  </Styled(label)>
+</Styled(div)>
+`;

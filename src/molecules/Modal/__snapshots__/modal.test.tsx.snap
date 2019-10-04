@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<List /> rendering should match snapshot 1`] = `
+<Styled(div)>
+  <Styled(div) />
+  <Styled(div)
+    aria-hidden={true}
+    aria-modal={true}
+    role="dialog"
+    tabIndex={-1}
+  >
+    <Styled(div)>
+      <Text
+        color="#000"
+        type="h3"
+      >
+        Hello modal
+      </Text>
+      <button
+        aria-label="Close"
+        type="button"
+      >
+        <span
+          aria-hidden="true"
+        >
+          ×
+        </span>
+      </button>
+    </Styled(div)>
+    <Styled(div)>
+      <p>
+        Modal
+      </p>
+    </Styled(div)>
+    <Styled(div)>
+      <Button
+        buttonType="secondary"
+      >
+        Cancel
+      </Button>
+       
+      <Button
+        buttonType="primary"
+      >
+        Accept
+      </Button>
+    </Styled(div)>
+  </Styled(div)>
+</Styled(div)>
+`;

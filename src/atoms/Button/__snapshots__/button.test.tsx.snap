@@ -1,5 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Button /> rendering hidden modal matches the snapshot 1`] = `<Styled(button) />`;
+exports[`<Button /> rendering hidden modal matches the snapshot 1`] = `
+<Styled(button)
+  buttonType="primary"
+  role="button"
+>
+  A simple button
+</Styled(button)>
+`;
 
-exports[`<Button /> rendering shown modal matches the snapshot 1`] = `<Styled(button) />`;
+exports[`<Button /> rendering shown modal matches the snapshot 1`] = `
+<Styled(button)
+  buttonType="primary"
+  role="button"
+>
+  A simple button
+</Styled(button)>
+`;

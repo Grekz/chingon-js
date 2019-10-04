@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RadioGroup /> rendering should match snapshot 1`] = `
+<Styled(div)>
+  <Radio
+    checked={false}
+    id="radio_0"
+    key="0"
+    onChange={[Function]}
+  >
+    Hello
+  </Radio>
+  <Radio
+    checked={false}
+    id="radio_1"
+    key="1"
+    onChange={[Function]}
+  >
+    World
+  </Radio>
+</Styled(div)>
+`;

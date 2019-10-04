@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Text /> rendering should match the snapshot for Text h1 1`] = `
+<Styled(h1)
+  color="#000"
+>
+  Sample text
+</Styled(h1)>
+`;

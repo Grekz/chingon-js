@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card /> rendering should match snapshot 1`] = `
+<Styled(div)
+  width="300px"
+>
+  <Styled(img)
+    alt="Test placeholder"
+    src="https://placeholder.pics/svg/300x180"
+  />
+  <div>
+    <Text
+      color="#000"
+      type="h3"
+    >
+      Title here
+    </Text>
+    <Text
+      color="#000"
+      type="span"
+    >
+      Some body content goes here let's see it complete
+    </Text>
+  </div>
+</Styled(div)>
+`;

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CheckBoxGroup /> rendering should match snapshot 1`] = `
+<Styled(div)>
+  <CheckBox
+    id="checkBox_0"
+    key="0"
+  >
+    Hello
+  </CheckBox>
+  <CheckBox
+    id="checkBox_1"
+    key="1"
+  >
+    World
+  </CheckBox>
+</Styled(div)>
+`;
