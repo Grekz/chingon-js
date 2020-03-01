@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import * as React from 'react'
 
-import ButtonType from '../../atoms/Button/button.component'
+import { ButtonType } from '../../atoms/Button'
 
 interface IButtonGroupProps {
   children: ButtonType[] | ButtonType

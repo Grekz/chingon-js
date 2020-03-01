@@ -10,6 +10,6 @@ storiesOf('Molecules|List', module).add('As Default', () => (
   <List>
     <ListItem>List item</ListItem>
     <ListItem>List item</ListItem>
-    <ListItem isActive>Active list item</ListItem>
+    <ListItem isActive={true}>Active list item</ListItem>
   </List>
 ))
